@@ -1,0 +1,152 @@
+﻿================================================================================
+1. You need to clone the repository
+
+
+          ############################################
+          # command: git clone <repository url>
+          ############################################
+
+
+            git clone https://github.com/OmkarNallagoni/EDA.git
+
+
+
+
+2. check your brnach name :
+
+
+          ##################################
+             Command: git branch -a   
+                    or 
+                    git branch
+         ###################################
+
+
+  
+   main
+   dev
+   remotes/origin/main   ==> only main is there/dev branch is not able 
+                             to see in UI
+   remotes/origin/dev    ==> both main and dev able to see
+
+
+
+
+3. Let's create a branch name : dev
+            ##########################
+            # comand: git branch dev #
+            ##########################
+
+
+     Spl condition:
+        In order to see the cretaed branch in github
+
+
+                 #################################  
+                   git push origin <branch_name>
+                   git push origin dev
+                ##################################
+ 
+4. * marks means : currently you are on which branch 
+     *main
+     what ever I modify the codes ====== > directly impact main branch
+
+
+5. we will move to dev branch
+   *dev
+          #################################################
+            command:  git checkout <branch_name>
+                      git checkout dev
+          ##################################################
+
+
+6. In order to create remote branch
+   command: git push origin <branch_name>
+            git push origin dev
+
+
+7. I will start my developemnts
+
+
+            ###########################################
+                       Modify any file
+            ###########################################
+
+
+8. After we modify/ any developents we need to push that changes
+   then only we can able to see in github
+
+
+9. First check the status: 
+   status will privide which files are modified or created etc
+                  #######################
+                  # command: git status #
+                  #######################
+
+
+10. Now add the changes:
+              ########################
+              # command: git add .   #
+              ########################
+
+
+11. Now commit che changes
+
+
+                git config --global user.email omkar.nallagoni@gamil.com
+              ################################################
+               command :  git commit -am<msg>
+                          git commit -am "workspace updated"
+             ###################################################
+
+
+            a: automatically you can track 
+            m: modified files before commit
+
+
+12. Finally we will push the changes 
+     
+          ###############################################
+               command: git push origin <branch name>
+                        git push origin dev
+         #################################################
+
+
+after codes will push in your feature branch
+you need merge with main branch 
+
+
+
+
+13. Raise a PR: PUll REQUEST 
+
+
+
+
+=================================================================
+clone the main code base
+created a branch
+we modified the file
+we push the changes on the feature branch
+===================================================================
+
+
+
+
+
+
+branch need to be deleted locally:  
+
+
+         ################################################
+            command: git branch -D <branch_name>
+                     git branch --delete <branch_name>
+        ###################################################
+
+
+branch need to be deleted remote 
+
+
+           ###############################################
+             Command: git push origin -d <branch_name>
+           ################################################

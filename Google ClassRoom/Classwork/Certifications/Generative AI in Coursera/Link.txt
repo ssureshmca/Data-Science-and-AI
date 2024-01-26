@@ -1,0 +1,4 @@
+link: https://www.deeplearning.ai/courses/generative-ai-for-everyone/
+
+       https://www.coursera.org/learn/generative-ai-for-everyone?utm_campaign=genai4e-launch&utm_medium=institutions&utm_source=deeplearning-ai
+
